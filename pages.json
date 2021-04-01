@@ -1,0 +1,43 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/adManage/adManage",
+			"style": {
+				"navigationBarTitleText": "广告管理",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 40
+			}
+		},
+		{
+			"path": "pages/selectDevice/selectDevice",
+			"style": {
+				"navigationBarTitleText": "选择终端",
+				"onReachBottomDistance": 40
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#AB956D",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/adManage/adManage",
+				"iconPath": "static/home_unseleted.png",
+				"selectedIconPath": "static/home_seleted.png",
+				"text": "众广告"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "众广告投放平台",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
